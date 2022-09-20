@@ -31,20 +31,22 @@ export default function App() {
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
 
-      <Box position={[-1.4, 0, 0]} />
-      <Box position={[1.4, 0, 0]} />
+      <Box position={[-1.8, 0, 0]} />
+      <Box position={[1.8, 0, 0]} />
 
 
 
 
-      <Box position={[0, -1.4, 0]} />
-      <Box position={[0, 1.4, 0]} />
+      <Box position={[0, -1.8, 0]} />
+      <Box position={[0, 1.8, 0]} />
 
  
 
       <mesh>
-          <boxBufferGeometry />
-          <meshPhongMaterial />
+         
+     
+          <octahedronBufferGeometry />
+          <meshBasicMaterial />
        </mesh>
   
     </Canvas>
